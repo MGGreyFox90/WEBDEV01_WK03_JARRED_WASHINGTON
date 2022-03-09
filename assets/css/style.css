@@ -3,8 +3,9 @@ body {
 }
 
 .hero{
+    
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 56px);
     background-color: indianred;
     position: relative;
     background: url('../images/solen-feyissa-JHTR-UGUnQ8-unsplash.jpg');
@@ -12,3 +13,13 @@ body {
     background position: center;
     background repeat: none;
 }
+
+.hero-text {
+    color: seashell;
+}
+
+    .hero-text h1{
+        font-size: 5rem;
+        margin-top: -1.3em;
+    }
+    
