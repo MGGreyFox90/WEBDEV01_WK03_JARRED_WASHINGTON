@@ -1,0 +1,14 @@
+body {
+    background-color: salmon;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: indianred;
+    position: relative;
+    background: url('../images/solen-feyissa-JHTR-UGUnQ8-unsplash.jpg');
+    background-size: cover;
+    background position: center;
+    background repeat: none;
+}
