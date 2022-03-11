@@ -22,4 +22,7 @@ body {
         font-size: 5rem;
         margin-top: -1.3em;
     }
-    
+
+    #about-me h3 {
+        color:honeydew;
+    }

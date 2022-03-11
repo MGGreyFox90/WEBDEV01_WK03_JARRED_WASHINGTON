@@ -12,11 +12,11 @@
     <title>About Me</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="navigation" data-bs-offset="0">
     <!-- ------------->
     <!-- NAVIGATION -->
     <!--  ------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Jarred Washington</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -25,53 +25,111 @@
             </button>
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#"></a>
-                    <a class="nav-link" href="#"></a>
-                    <a class="nav-link" href="#"></a>
+                    <a class="nav-link active" aria-current="page" href="about">About Me</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#interestModal">Interests</a>
+                    <a class="nav-link" href="#">Twitter</a>
                     <a class="nav-link" href="#"></a>
                 </div>
             </div>
         </div>
     </nav>
+    <!--  -------------->
+    <!-- hero section -->
+    <!-- --------------->
     <div class="hero d-flex justify-content-center align-items-center">
         <div class="hero-text">
             <h1 class="animate__animated animate__bounceInLeft">Hello Good People!</h1>
             <p class="animate__animated animate__slow animate__fadeInUp">A page about my interests</p>
         </div>
     </div>
-    <div class="container">
-        <h1>
-            Jarred Washington
-        </h1>
-        <section>
-            <article>
-                <p>
-                    Hello, My name is Jarred Washington. I'm taking Web Development course to improve my technical and
-                    soft
-                    skills. I currently work for a technology company located in Baton Rouge.
-                </p>
-                <p>
-                    I'm currently a sophomore majoring in business finance with a minor in computer science.I work
-                    pretty
-                    much from 9 am till 12 am but take the necessary personal time. Hobbies nowadays are reading, stock
-                    reviews, and traveling when time permits.
-                </p>
-            </article>
-        </section>
-        <section>
-            <h3>Top languages for programming for 2022</h3>
-            <ul>
-                <li>Python</li>
-                <li>Javascript</li>
-                <li>Java</li>
-                <li>Kotlin</li>
-            </ul>
-        </section>
-    </div>
+    <!-- ------------->
+    <!-- About Me ---->
+    <!--  ------------>
+    <div class="container my-4" id="about">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-8" id="about-me">
+                    <h3 class="mb-3">
+                        About Me
+                    </h3>
+                    <section class="mb-5">
+                        <article>
+                            <p>
+                                Hello, My name is Jarred Washington. I'm taking Web Development course to improve my
+                                technical and
+                                soft
+                                skills. I currently work for a technology company located in Baton Rouge.
+                            </p>
+                            <p>
+                                I'm currently a sophomore majoring in business finance with a minor in computer
+                                science.I work
+                                pretty
+                                much from 9 am till 12 am but take the necessary personal time. Hobbies nowadays are
+                                reading, stock
+                                reviews, and traveling when time permits.
+                            </p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!----   ------->
+        <!-- Modal ----->
+        <!----   ------->
+        <div class="modal fade" id="interestModal" tabindex="-1" aria-labelledby="interestModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="interestModalLabel">Interests</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-10 col-md-8">
+                                    <div class="card" style="width: 20rem;">
+                                        <img src="assets/images/jamie-street-VP4WmibxvcY-unsplash.jpg"
+                                            class="card-img-top" alt="finance">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Finance</h5>
+                                            <p class="card-text">“Money is a terrible master but an excellent servant.”
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-10 col-md-8">
+                                        <div class="card" style="width: 20rem;">
+                                            <img src="assets/images/minh-pham-HI6gy-p-WBI-unsplash.jpg"
+                                                class="card-img-top" alt="technology">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Technology</h5>
+                                                <p class="card-text">“Technology is best when it brings people
+                                                    together.”</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10 col-md-8">
+                                            <div class="card" style="width: 20rem;">
+                                                <img src="assets/images/quokkabottles-ctuPJ5hli0s-unsplash.jpg"
+                                                    class="card-img-top" alt="family">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Family</h5>
+                                                    <p class="card-text">“We may have our differences, but nothing’s
+                                                        more important than family.”</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
